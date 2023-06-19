@@ -1,4 +1,5 @@
 # Distributed URL Shortener with Kubernetes and Docker
+<p align="center"> <a href="https://kubernetes.io" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg" alt="kubernetes" width="50" height="50"/> </a>ㅤ<a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="50" height="50"/> </a>ㅤ<a href="https://flask.palletsprojects.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-icon.svg" alt="flask" width="50" height="50"/> </a></p>
 
 This project is a distributed URL shortener that utilizes Kubernetes and Docker for deployment, along with MongoDB as the database. Unlike traditional URL shorteners implemented with Flask, this project focuses on demonstrating the power and scalability of containerization and orchestration technologies. The environment details after deployment in Kubernetes can be seen in the following picture.
 <p align="center">
