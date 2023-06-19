@@ -1,6 +1,9 @@
 # Distributed URL Shortener with Kubernetes and Docker
 
-This project is a distributed URL shortener that utilizes Kubernetes and Docker for deployment, along with MongoDB as the database. Unlike traditional URL shorteners implemented with Flask, this project focuses on demonstrating the power and scalability of containerization and orchestration technologies.
+This project is a distributed URL shortener that utilizes Kubernetes and Docker for deployment, along with MongoDB as the database. Unlike traditional URL shorteners implemented with Flask, this project focuses on demonstrating the power and scalability of containerization and orchestration technologies. The environment details after deployment in Kubernetes can be seen in the following picture.
+<p align="center">
+  <img src="./screenshots/kubernetes.PNG" align='center' alt="kubernetes" width="600" height="400">
+</p>
 
 ## Features
 - **Distributed Architecture:** The URL shortener is designed to be distributed across multiple containers, allowing for scalability and fault tolerance.
