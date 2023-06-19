@@ -1,0 +1,41 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: db
+  name: db
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: db
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: db
+    spec:
+      containers:
+      - image: mongo
+        name: db
+        
+        ports:
+        - containerPort: 27017
+        
+        env:
+          - name: MONGO_INITDB_ROOT_USERNAME
+            value: admin
+          - name: MONGO_INITDB_ROOT_PASSWORD
+            value: admin
+        resources: {}
+        volumeMounts:
+          - mountPath: /data
+            name: data
+        
+      volumes:
+        - name: data
+          persistentVolumeClaim:
+            claimName: db-pvc
+status: {}
