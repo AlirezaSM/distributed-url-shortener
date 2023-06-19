@@ -1,0 +1,33 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    app: shorturl
+  name: shorturl
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: shorturl
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        app: shorturl
+    spec:
+      containers:
+      - image: alirezasm/second-repo:shorturl
+        name: shorturl
+        resources: {}
+        volumeMounts:
+          - mountPath: /app/config.yml
+            subPath: config.yml
+            name: shorturl-configmap
+            readOnly: true
+      volumes:
+        - name: shorturl-configmap
+          configMap:
+            name: shorturl-configmap
+status: {}

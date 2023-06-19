@@ -1,0 +1,15 @@
+apiVersion: v1
+data:
+  config.yml: |
+    port: 8080
+    expiration: 60
+    db_address: db-service
+    db_username: admin
+    db_password: admin
+kind: ConfigMap
+metadata:
+  creationTimestamp: "2022-01-26T15:54:37Z"
+  name: shorturl-configmap
+  namespace: default
+  resourceVersion: "22430"
+  uid: 437779f1-8ca3-4e2b-81df-e772e4fb7d67
